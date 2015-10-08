@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http:www.thymeleaf.org">
+<head>
+<title>Neo4j : eigenaars!</title>
+</head>
+<body>
+	<h1>Neo4j : eigenaars!</h1>
+	<ul>
+		<li th:each="eigenaar:${eigenaars}" th:text="${eigenaar}">Gerard</li>
+		<li th:remove="all">Jenny</li>
+	</ul>	
+</body>
+</html>

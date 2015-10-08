@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http:www.thymeleaf.org">
+<head>
+<title>MongoDB : personen!</title>
+</head>
+<body>
+	<h1>MongoDB : personen!</h1>
+	<ul>
+		<li th:each="persoon:${personen}" th:text="${persoon.familienaam}">Gerard</li>
+		<li th:remove="all">Jenny</li>
+	</ul>	
+</body>
+</html>
